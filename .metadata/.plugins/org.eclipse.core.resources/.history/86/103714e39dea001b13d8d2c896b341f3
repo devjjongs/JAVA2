@@ -1,0 +1,10 @@
+package iotest;
+
+public class Member {
+	private int num;
+	private String name;
+	private String pw;
+	
+	
+	
+}

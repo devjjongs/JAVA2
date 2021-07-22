@@ -1,0 +1,17 @@
+package iotest;
+
+import java.io.File;
+
+public class ReadTest {
+
+	public static void main(String[] args) {
+		try {
+			// 파일 객체 생성
+			File file = new File("C://Users//whdtj//B.Study//eclipse-workspace//20190722//src//readme.txt");
+			
+			//스캐너로 파일 읽기
+			Scanner sc = new Scanner(flie);
+			
+		}
+	}
+}

@@ -1,0 +1,14 @@
+package iotest;
+
+import java.io.ObjectOutputStream;
+
+public class ObjectReadWriteTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Member member = new Member(123, "Kim malja", "123");
+		
+		ObjectOutputStream objectOutputStream = new ObjectOutputStream(null)
+	}
+
+}

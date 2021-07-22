@@ -1,0 +1,11 @@
+package iotest;
+
+public class CharReadTest {
+	public static void main(String[] args) {
+		// readme.txt ==> char stream 으로 변환
+		// File Reader 사용 --> 1:1로 불러오기
+		// 한번에 읽어오기 위해 BufferReader 개념을 이용
+		
+		
+	}
+}

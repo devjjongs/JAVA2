@@ -1,0 +1,12 @@
+package iotest;
+
+import java.io.Serializable;
+
+public class Member implements Serializable{
+	private int num;
+	private String name;
+	private String pw;
+	
+	
+	
+}

@@ -1,0 +1,7 @@
+package iotest;
+
+public class CharReadTest {
+	public static void main(String[] args) {
+		
+	}
+}
