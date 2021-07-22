@@ -35,7 +35,7 @@ public abstract class BankBook {
             //각자 다르게 입력
             input();
             System.out.print("기간은(년 단위)? ");
-            period = reader.read()-48;
+            period = reader.read() - 48;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -43,9 +43,7 @@ public abstract class BankBook {
 
     protected abstract void input();
 
-    public void calc() {        //  연산
-
-    }
+    public abstract void calc();       //  연산
 
     public abstract void output();      //  출력
 }

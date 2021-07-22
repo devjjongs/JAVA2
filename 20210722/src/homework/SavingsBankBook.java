@@ -2,15 +2,14 @@ package homework;
 
 import java.io.IOException;
 
-public class SavingBankBook extends BankBook {
-    protected int depositAmount;
+public class SavingsBankBook extends BankBook {
+    protected int depositAmount; //입금액
 
     private static int count;
 
-    public SavingBankBook() {
+    public SavingsBankBook() {
         accountNum = String.format("%3d-%04d", BankCode.SAVING_ACCOUNT, ++count);
     }
-
 
     @Override
     public void input() {
@@ -27,15 +26,18 @@ public class SavingBankBook extends BankBook {
 
     @Override
     public void calc() {
-
+        interest = (long) (total * rate);
+        depositAmount = (int) (total+interest);
     }
 
     @Override
     public void output() {
-        System.out.println("고객명: " + custName);
-        System.out.println("저축 기간: " + period);
-        System.out.println("저축 총액: " + total);
+        System.out.println("고객명: " + custName + "님");
         System.out.println("계좌번호: " + accountNum);
+        System.out.println("입금액: " + depositAmount);
+        System.out.println("저축 기간: " + period + "년");
+        System.out.println("이자율: " + rate * 100 + "%");
+        System.out.println("이자: " + interest + "원");
+        System.out.println("만기환급액: " + total + "원");
     }
-
 }

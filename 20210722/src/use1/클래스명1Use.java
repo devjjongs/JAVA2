@@ -1,4 +1,4 @@
-package use;
+package use1;
 
 import poly.Duke;
 import poly.서브클래스2;

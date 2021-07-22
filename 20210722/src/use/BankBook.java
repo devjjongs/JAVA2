@@ -2,14 +2,14 @@ package use;
 
 import homework.InstallmentBankBook;
 import homework.LoanBankBook;
-import homework.SavingBankBook;
+import homework.SavingsBankBook;
 
 import java.util.Scanner;
 
 public class BankBook {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        SavingBankBook cust1 = new SavingBankBook();
+        SavingsBankBook cust1 = new SavingsBankBook();
         InstallmentBankBook cust2 = new InstallmentBankBook();
         homework.BankBook cust3 = new LoanBankBook();
         //계좌번호 자동생성부분

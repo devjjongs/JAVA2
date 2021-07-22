@@ -1,4 +1,4 @@
-package use;
+package use1;
 
 import notinstance.Samp1;
 
