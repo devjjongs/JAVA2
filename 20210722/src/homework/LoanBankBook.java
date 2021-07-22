@@ -33,9 +33,9 @@ public class LoanBankBook extends BankBook {
 
     @Override
     public void output() {
-        System.out.println(accountNum);
-        System.out.println(period);
-        System.out.println(total);
-        System.out.println(accountNum);
+        System.out.println("고객명: " + custName);
+        System.out.println("상환기간: " + period);
+        System.out.println("대출 총액" + total);
+        System.out.println("계좌번호: " + accountNum);
     }
 }
