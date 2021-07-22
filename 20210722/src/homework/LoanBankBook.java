@@ -15,10 +15,10 @@ public class LoanBankBook extends BankBook {
     @Override
     public void input() {
         //Exception 존재 하지 않는다고 설정하지 않기
-        System.out.println("대출금액? ");
+        System.out.print("대출금액? ");
         try {
             total = Long.parseLong(reader.readLine());
-        }catch (NumberFormatException e) {
+        } catch (NumberFormatException e) {
             System.out.println(",나 특수문자 사용하지 마시고 숫자만 입력");
             input();
         } catch (IOException e) {
@@ -34,8 +34,8 @@ public class LoanBankBook extends BankBook {
     @Override
     public void output() {
         System.out.println("고객명: " + custName);
-        System.out.println("상환기간: " + period);
-        System.out.println("대출 총액" + total);
+        System.out.println("상환 기간: " + period);
+        System.out.println("대출 총액: " + total);
         System.out.println("계좌번호: " + accountNum);
     }
 }

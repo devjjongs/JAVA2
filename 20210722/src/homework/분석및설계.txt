@@ -2,9 +2,9 @@
 1. 신규통장
 ===============
 
-    저축통장    -> C
-    적금통장    -> C
-    대출통장    -> C
+    저축통장    -> C (SavingsBankBook)  [4.5]
+    적금통장    -> C (InstallmentBankBook) [1.2]
+    대출통장    -> C (LoanBankBook) [7.8]
 
 ===============
 2. 상속 생성
