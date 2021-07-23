@@ -17,10 +17,10 @@ public class BankBookUse {
         homework.BankBook savingsBankBook2 = new SavingsBankBook();
         savingsBankBook2.baseInput();
         savingsBankBook2.output();
-
-        InstallmentBankBook cust2 = new InstallmentBankBook();  //적금통장 생성
-        cust2.baseInput();
-        cust2.output();
+//
+//        InstallmentBankBook cust2 = new InstallmentBankBook();  //적금통장 생성
+//        cust2.baseInput();
+//        cust2.output();
 
         homework.BankBook cust3 = new LoanBankBook();   //대출통장 생성
         cust3.baseInput();  //  binding

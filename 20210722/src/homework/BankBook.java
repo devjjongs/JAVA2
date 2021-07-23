@@ -27,14 +27,14 @@ public abstract class BankBook {
          기간(연단위) : 1
          **/
 
-        System.out.print("고객 이름은? ");
         try {
+            System.out.print("고객 이름은? ");
             custName = reader.readLine();
             //sub 클래스에서 override한 메소드를 호출하도록 만들어준다
 
             //각자 다르게 입력
             input();
-            System.out.print("기간은(년 단위)? ");
+            System.out.print("기간은(년)? ");
             period = reader.read() - 48;
             reader.read();
             reader.read();
@@ -43,6 +43,7 @@ public abstract class BankBook {
         } catch (Exception e) {
             // 예상치 못한 예외 발생 상황
         }
+        calc();
     }
 
     protected abstract void input();

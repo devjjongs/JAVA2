@@ -7,15 +7,15 @@ public class SavingsBankBook extends BankBook {
     private static int count; // 기초 클래스로 빼면? 2021.07.23 확인 필요
     protected double rate = 4.5;              //  이자율
 
-
+    //생성자
     public SavingsBankBook() {
         accountNum = String.format("%3d-%04d", BankCode.SAVINGS_ACCOUNT, ++count);
     }
 
     @Override
     public void input() {
-        System.out.print("저축금액? ");
         try {
+            System.out.print("저축금액? ");
             savingsAmount = Integer.parseInt(reader.readLine());
         } catch (NumberFormatException e) {
             System.out.println(",나 특수문자 사용불가, 숫자만 입력");
@@ -33,7 +33,8 @@ public class SavingsBankBook extends BankBook {
 //        interest = (long) (total * rate);
 //         =(int) (total + interest);
         //원금 + (원금*이자율/100)*기간
-        total = savingsAmount + (long)(savingsAmount * rate / 100) * period;
+        interest = (long) (savingsAmount * rate / 100);
+        total = savingsAmount + interest * period;
     }
 
     @Override
@@ -48,5 +49,12 @@ public class SavingsBankBook extends BankBook {
 
 //        고객이름      계좌번호        입금액     기간  이율      이자      만기환급금
 //        김말자       100-0001     10000000     1   4.5%
+
+        System.out.printf(
+                "%8s%10s%10s%4s(년)%6s%10s%10s\n",
+                "고객이름", "계좌번호", "저축금액", "기간", "이율", "이자", "만기시환급금");
+        System.out.printf(
+                "%10s%10s%,10d%4d  %4.1f%% %,10d%,10d\n",
+                custName, accountNum, savingsAmount, period, rate, interest, total);
     }
 }
