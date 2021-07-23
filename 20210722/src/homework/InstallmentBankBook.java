@@ -2,14 +2,14 @@ package homework;
 
 import java.io.IOException;
 
-public class InstallmentBankBook extends BankBookUse {
+public class InstallmentBankBook extends BankBook {
     protected int monthlyDepositAmount; //월 입금액
 
     private static int count;
 
     public InstallmentBankBook() {
         accountNum = String.format("%3d-04d", BankCode.INSTALLMENT_ACCOUNT, ++count);
-        rate = 0.012;
+//        rate = 0.012;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class InstallmentBankBook extends BankBookUse {
 
     @Override
     public void calc() {
-        interest = (long) (total * rate);
+//        interest = (long) (total * rate);
         monthlyDepositAmount = (int) (total + interest);
     }
 
@@ -37,7 +37,7 @@ public class InstallmentBankBook extends BankBookUse {
         System.out.println("계좌번호: " + accountNum);
         System.out.println("월 납입액: " + monthlyDepositAmount);
         System.out.println("저축 기간: " + period + "년");
-        System.out.println("이자율: " + rate * 100 + "%");
+//        System.out.println("이자율: " + rate * 100 + "%");
         System.out.println("이자: " + interest + "원");
         System.out.println("만기수령액: " + total + "원");
     }

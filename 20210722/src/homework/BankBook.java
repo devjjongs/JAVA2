@@ -4,11 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public abstract class BankBookUse {
+public abstract class BankBook {
     protected String custName;      //  고객이름
     protected String accountNum;    //  계좌번호
     protected int period;           //  기간
-    protected double rate;          //  이자율
+    //protected double rate;          //  이자율
     protected long interest;        //  이자액
     protected long total;           //  총 환급액
 
@@ -36,14 +36,18 @@ public abstract class BankBookUse {
             input();
             System.out.print("기간은(년 단위)? ");
             period = reader.read() - 48;
+            reader.read();
+            reader.read();
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (Exception e) {
+            // 예상치 못한 예외 발생 상황
         }
     }
 
     protected abstract void input();
 
-    public abstract void calc();       //  연산
+    protected abstract void calc();       //  연산
 
     public abstract void output();      //  출력
 }
