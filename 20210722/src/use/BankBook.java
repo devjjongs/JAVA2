@@ -1,5 +1,6 @@
 package use;
 
+import homework.BankBookUse;
 import homework.InstallmentBankBook;
 import homework.LoanBankBook;
 import homework.SavingsBankBook;
@@ -11,7 +12,7 @@ public class BankBook {
         Scanner sc = new Scanner(System.in);
         SavingsBankBook cust1 = new SavingsBankBook();
         InstallmentBankBook cust2 = new InstallmentBankBook();
-        homework.BankBook cust3 = new LoanBankBook();
+        BankBookUse cust3 = new LoanBankBook();
         //계좌번호 자동생성부분
         System.out.println("업무 목록");
         System.out.println("1. 저축 | 2. 적금 | 3. 대출 | 4. 종료");

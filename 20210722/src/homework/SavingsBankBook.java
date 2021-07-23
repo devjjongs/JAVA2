@@ -2,7 +2,7 @@ package homework;
 
 import java.io.IOException;
 
-public class SavingsBankBook extends BankBook {
+public class SavingsBankBook extends BankBookUse {
     protected int depositAmount; //입금액
 
     private static int count;

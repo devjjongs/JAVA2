@@ -2,7 +2,7 @@ package homework;
 
 import java.io.IOException;
 
-public class LoanBankBook extends BankBook {
+public class LoanBankBook extends BankBookUse {
     protected int monthlyPaidAmount; //월 상환금
 
     private static int count;   //static 을 이용하여 인스턴스 하나씩 적용

@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public abstract class BankBook {
+public abstract class BankBookUse {
     protected String custName;      //  고객이름
     protected String accountNum;    //  계좌번호
     protected int period;           //  기간
