@@ -1,6 +1,7 @@
 package use;
 
 import homework.BankBook;
+import homework.InstallmentBankBook;
 import homework.LoanBankBook;
 import homework.SavingsBankBook;
 
@@ -27,6 +28,7 @@ public class BankBookApp {
                 break;
 
             case 2:
+                bankBook = new InstallmentBankBook();
                 break;
 
             case 3:
