@@ -21,6 +21,8 @@ public class TestString {
             s5 += "씨";
 
             System.out.println(s5);
+
+            s5 += "  안녕하세요";
         }
         // Date d1 = 1999.9.9;
     }
