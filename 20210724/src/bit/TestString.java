@@ -1,13 +1,14 @@
 package bit;
 
+import java.util.Date;
+
 public class TestString {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         {
-            String s1 = "ghgh";
-        }
-
+            String s1 = "ghgh";//생성
+        }//소멸
         char[] chs = new char[]{'g', 'h', 'g', 'h'};
         String s2 = new String(chs);
 
@@ -23,7 +24,12 @@ public class TestString {
             System.out.println(s5);
 
             s5 += "  안녕하세요";
+
+            System.out.println(s5);
+
+            s5 = s5.replace('씨', '님');
+            System.out.println(s5);
         }
-        // Date d1 = 1999.9.9;
+//        Date d1 = 1999.9.9;
     }
 }
